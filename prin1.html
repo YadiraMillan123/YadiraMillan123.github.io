@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" async></script>
+    
+    <title> </title>
+    </head>
+    <body>
+    <header>
+
+      
+     
+        
+        <div class="wrap">
+  <a href="#"><button  class="btnr">⬆</button></a>
+</div>        
+
+        <div class="menu container">
+          
+            <a href="#"><img src="images/images/logo.png" class="logo" alt=""></a>
+              
+            <style>
+               
+              h1 {
+                color: white;
+              }
+              #fecha, #hora {
+                color: white;
+              }
+            </style>
+           
+           
+            <span id="fecha"></span> <span id="hora"></span>
+          
+            <script>
+              // Obtenemos la fecha y hora del sistema
+              var fechaHora = new Date();
+              var dia = fechaHora.getDate();
+              var mes = fechaHora.getMonth() + 1;
+              var anio = fechaHora.getFullYear();
+              var hora = fechaHora.getHours();
+              var minutos = fechaHora.getMinutes();
+              var segundos = fechaHora.getSeconds();
+          
+              // Agregamos ceros a los números menores de 10
+              if (dia < 10) {
+                dia = "0" + dia;
+              }
+              if (mes < 10) {
+                mes = "0" + mes;
+              }
+              if (hora < 10) {
+                hora = "0" + hora;
+              }
+              if (minutos < 10) {
+                minutos = "0" + minutos;
+              }
+              if (segundos < 10) {
+                segundos = "0" + segundos;
+              }
+          
+              // Mostramos la fecha y hora en la página
+              document.getElementById("fecha").innerHTML = dia + "/" + mes + "/" + anio;
+              document.getElementById("hora").innerHTML = hora + ":" + minutos + ":" + segundos;
+            </script>
+            <input type="checkbox" id="menu">
+            
+            <label for="menu"><img src="images/images/menu.png" class="menu-icono" alt=""></label>
+
+            
+
+            <nav class="navbar">
+
+
+
+             
+               <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="vym.html">Misión y Visión</a></li>  
+                    <li><a href="#ancla">Productos</a></li>
+                    <li><a href="formulario.html" target="_blank">Contactanos</a>
+
+
+
+
+
+
+                      
+
+                       <ul>
+                    <li><a href="tel:+144335747486">empresarial</a> </li>
+                    <li><a href="participantes.html">partcipantes</a> </li>
+                      </ul>
+                    </li>
+                </ul> 
+            </nav>
+        </div>
+        
+        <div class="header-content container">
+            <div class="header-txt">
+              
+                <h1 class="animate__animated animate__bounce">Hamburguesas</h1>
+                <p>
+                    Te damos la bienvenida a Kik Club con el fin de satisfacer a todos nuetros clientes,
+                    ponemos a su disposcision nuestra amplia variedad de menu.
+                </p>
+                <div class="botones">
+
+                 <div center><a href="promociones.html" class="btn-2" > Promociones <img class="icon" src="images/images/arrow.svg" alt="icon"></a></div>
+                </div>
+                
+            </div>
+
+            <div class="header-img">
+                <img src="images/images/img-1.png" class="hamburger" alt="hamburger">
+                 
+          
+            </div>
+            
+
+        </div>
+
+    </header>
+        <br>
+        <br>
+        <br>
+        <br>
+      <section class="contenedor">
+                 <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                    </span>
+                    
+                </div>
+                <h4>solicitud de compra</h4>
+                <input class="controls" type="text" name="name"  placeholder="Ingrese su Nombre">
+                <input class="controls" type="text" name="name"  placeholder="Ingrese su Telefono">
+                <input class="controls" type="text" name="subject"  placeholder="Ingrese su correo">
+                <input class="controls" type="text" name="subject"  placeholder="Ingrese su Direccion">
+                <a href="#ancla"><button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button></a>
+            </div>
+        </div>
+    </section>
+        <br>
+        <br>
+    
+         
+        
+        
+                
+
+        <div class="container">
+
+     
+       
+            <div class="product">
+                <h2 class="title">menu</h2>
+                <img class="hoja" src="images/images/hoja.png" alt="">
+            </div>
+
+            <div class="menu-nav">                
+                <div id="pro1" class="tab active" >Hamburguesa</div>
+                <div id="pro2" class="tab" >Desayunos</div>
+                <a name="ancla"><div id="pro3" class="tab " >Bebidas</div></a>
+                       
+
+            </div>
+
+            <div class="pro1 tab-content">
+                <div class="box-container-1">
+                    
+                     <div class="box-1">
+                    <div class="carro-B">
+                    <div class="box-1">
+                        <div class="image3">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                  <br>
+                                <img src="images/images/clasica.png" alt="" class="img-item">
+                                      <br>
+                                      <br>
+                                      <div class="conten">
+                                 <h3><span class="titulo-item"> Cheese Burger </span></h3>
+                                      </div>
+                                       <p>
+                                Hamburguesa de res, con queso, lechuga y tomate.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$60</span>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                           <button class="boton-item">&#128722;</button>
+                          </div>
+                         </div>
+
+                              <div class="box-1">
+                             <div class="carro-B">
+                             <div class="box-1">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/doble%20tocino%20parrilada.png" alt="" class="img-item">
+                                 <h3><span class="titulo-item">Beef  Burger</span></h3>
+                                       <p>
+                                Hamburguesa de res, con pollo y tocino, lechuga, tomate y cebolla.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$65</span>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+                    
+                             <div class="box-1">
+                             <div class="carro-B">
+                             <div class="box-1">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/wopper.png" alt="" class="img-item">
+                                 <h3><span class="titulo-item"> Classic Burger </span></h3>
+                                       <p>
+                             Hamburguesa clasica de res, con queso, lechuga, tomate y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$55</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                           </div>
+                           </div>
+                    
+                     <div class="box-1">
+                     <div class="carro-B">
+                   <div class="box-1">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/hambuerger.png" alt="" class="img-item">
+                                 <h3><span class="titulo-item"> Beef Burger  Chicken</span></h3>
+                                       <p>
+                                Hamburguesa de res con pollo, lechuga , aguacate y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$70</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                         </div>
+                    
+                    <div class="box-1">
+                    <div class="carro-B">
+                    <div class="box-1">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                <img src="images/images/clasica%20con%20tocino.png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Grilled Burger </span></h3>
+                                       <p>
+                                Hamburguesa de res, con tocino, tomate, lechuga y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$60</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+                    
+                      <div class="box-1">
+                    <div class="carro-B">
+                  <div class="box-1">
+                        <div class="image4">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/clasica%202%20burguer.png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Doble Wopper Burger </span></h3>
+                                       <p>
+                                        Hambueguesa doble carne, con queso amarillo,  lechuga y aderezos
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$110</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                         </div>
+                          </div>
+
+                        <div class="box-1">
+                        <div class="carro-B">
+                        <div class="box-1">
+                        <div class="image5">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/triple%20meat%20burguer.png" alt="" class="img-item">
+                                 <h3><span class="titulo-item">Triple Burger Premium</span></h3>
+                                       <p>
+                                        Hambueguesa con triple carne, con queso amarillo y  lechuga .
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$150</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                            </div>
+                            <button class="boton-item">&#128722;</button>
+                            </div>
+                            </div>
+
+                        <div class="box-1">
+                        <div class="carro-B">
+                        <div class="box-1">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                <img src="images/images/gurmet%20jr.png" alt="" class="img-item">
+                                <br>
+                                <h3><span class="titulo-item">Burger Premium Gurmet</span></h3>
+                                       <p>
+                               Hambueguesa con carne, papas, lechuga,tomate y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$200</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                            <button class="boton-item">&#128722;</button>
+                            </div>
+                            </div>
+
+                        <div class="box-1">
+                        <div class="carro-B">
+                        <div class="box-1">
+                        <div class="image4">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/pollo.png" alt="" class="img-item">}
+                                      <br>
+                                  <br>
+                                 <h3><span class="titulo-item">Burger Chicken</span></h3>
+                                       <p>
+                                Hambueguesa clasica de pollo con lechuga,tomate y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$70</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                          <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-1">
+                    <div class="carro-B">
+                    <div class="box-1">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/doble%20pollo.png" alt="" class="img-item">
+                                <br>
+                                <br>
+                                 <h3><span class="titulo-item">Burger Chicken Premium</span></h3>
+                                       <p>
+                                        Hambueguesa con doble porcion de  pollo con lechuga y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$90</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-1">Carga Mas</div>
+                </center>
+            </div>
+
+
+
+            <div class="pro2 tab-content">
+                <div class="box-container-2">
+
+                   <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (12).png" alt="" class="img-item">
+                                <br>
+                                <br>
+                                 <h3><span class="titulo-item">Burrito Asada</span></h3>
+                                       <p>
+                                        Burrito de asada  con verdura y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$50</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (14).png" alt="" class="img-item">
+                                <br>
+                                <br>
+                                 <h3><span class="titulo-item">Burrito Integral</span></h3>
+                                       <p>
+                                       Burrito integral con lechuga, verduras y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$60</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (16).png" alt="" class="img-item">
+                                <br>
+                                <br>
+                                 <h3><span class="titulo-item">Burrito Pollo</span></h3>
+                                       <p>
+                                        Burrito de pollo con verduras y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$55</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (18).png" alt="" class="img-item">
+                                <br>
+                                <br>
+                                 <h3><span class="titulo-item">Burrito Desebrada</span></h3>
+                                       <p>
+                                        Burrito de desebrada ,verduras y   aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$65</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (24).png" alt="" class="img-item">
+                              
+                                 <h3><span class="titulo-item">Omelette Clasico</span></h3>
+                                       <p>
+                                        Omelette clasico o tortilla francesa clasica.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$70</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (20).png" alt="" class="img-item">
+                                 <h3><span class="titulo-item">Omelette Especial</span></h3>
+                                       <p>
+                                        Omelette especial con tomate y cebolla.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$85</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (29).png" alt="" class="img-item">
+                          
+                                
+                                 <h3><span class="titulo-item">Sandwich </span></h3>
+                                       <p>
+                                        Sandwich de jamon con jitomate queso amarillo y lechuga.
+                                     </p>
+                                  </div>
+                                 <span class="precio-item">$50</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (31).png" alt="" class="img-item">
+                                
+                                 <h3><span class="titulo-item">Sandwich Integral</span></h3>
+                                       <p>
+                                        Sandwich con pan integral de jamon con verdura y aderezos.
+                                      </p>
+                                  </div>
+                                 <span class="precio-item">$55</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (32).png" alt="" class="img-item">
+                              
+                                
+                                 <h3><span class="titulo-item">Sandwich Especial</span></h3>
+                                       <p>
+                                        Sandwich especial de jamon con verdura y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$80</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+                    <div class="box-2">
+                    <div class="carro-B">
+                    <div class="box-2">
+                        <div class="image">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                <img src="images/images/My project-1 (34).png" alt="" class="img-item">
+                                                                
+                                 <h3><span class="titulo-item">Sandwich Asada</span></h3>
+                                       <p>
+                                        Sandwich de asada  con verdura, queso amarillo y aderezos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$90</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                        <button class="boton-item">&#128722;</button>
+                          </div>
+                          </div>
+
+
+                </div>
+
+
+                <center>
+                    <div class="load-more" id="load-more-2">Carga Mas</div>
+                </center>
+            </div>
+
+
+            <div class="pro3 tab-content">
+                <div class="box-container-3">
+
+                     <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                    <br>
+                                    <br>
+                                <img src="images/images/My project-1 (39).png" alt="" class="img-item">
+
+                                 <h3><span class="titulo-item">Pepsi Chica</span></h3>
+                                 
+                                
+                                       <p>
+                                        Pepsi chica de 250 ml con hielos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$30</span>                                  
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                      <br>
+                                <img src="images/images/My project-1 (40).png" alt="" class="img-item">
+
+                                <br>
+                                 <h3><span class="titulo-item"> Coca Cola Chica</span></h3>
+                                       <p>
+                                          Coca Cola chica de 250 ml y hielos
+                                        </p>
+                                  </div>
+                                 <span class="precio-item">$30</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                    <br>
+                                      <br>
+                                <img src="images/images/My project-1 (41).png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Sprite Chica</span></h3>
+                                       <p>
+                                        Sprite chica de 250 ml con hielos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$30</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                      <br>
+                                <img src="images/images/My project-1 (42).png" alt="" class="img-item">
+                                <br>
+                                
+                                 <h3><span class="titulo-item">Fanta  Chica</span></h3>
+                                       <p>
+                                        Fanta chica de 250 ml con hielos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$30</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                    <br>
+                                      <br>
+                                <img src="images/images/My project-1 (43).png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Pepsi Mediana </span></h3>
+                                       <p>
+                                        Pepsi Mediana de 500 ml con hielos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$60</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                      <br>
+                                <img src="images/images/My project-1 (44).png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Coca Cola Mediana </span></h3>
+                                       <p>
+                                        Coca Cola Mediana de 500 ml con hielos.
+
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$60</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                      <br>
+                                <img src="images/images/My project-1 (46).png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Sprite Mediana</span></h3>
+                                       <p>
+                                        Sprite Mediana de 500 ml con hielos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$60</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                      <br>
+                                <img src="images/images/My project-1 (47).png" alt="" class="img-item">
+                                <br>
+                              
+                                 <h3><span class="titulo-item">Fanta Mediana </span></h3>
+                                       <p>
+                                        Fanta Mediana de 500 ml con hielos.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$60</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                      <br>
+                                <img src="images/images/My project-1 (49).png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Agua Ciel 600 ml </span></h3>
+                                       <p>
+                                        Agua Ciel embotellada chica de 600 ml.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$25</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+                    <div class="box-3">
+                    <div class="carro-B">
+                    <div class="box-3">
+                        <div class="image2">
+                            <div class="">
+                               <div class="item">
+                                  <div class="content">
+                                      <br>
+                                      <br>
+                                <img src="images/images/My project-1 (51).png" alt="" class="img-item">
+                                <br>
+                                 <h3><span class="titulo-item">Cafe Chico </span></h3>
+                                       <p>
+                                        Cafe Chico capuchuno de 250 ml con endulsantes aparte.
+                                    </p>
+                                  </div>
+                                 <span class="precio-item">$45</span>
+                                  <br>
+                                  <br>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                         <button class="boton-item">&#128722;</button>
+                         </div>
+                        </div>
+
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-3">Carga Mas</div>
+                </center>
+    
+            </div> 
+            
+   
+        </div> 
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     
+
+    <section class="info">
+
+        <div class="info-content container">
+
+            <div class="info-txt">
+                <p>Los mejores platillos</p>
+                <h2>Informacion</h2>
+
+                <div class="info-sec">
+
+                    <div class="info-1">
+                        <img src="images/images/f1.svg" alt="">
+                        <div class="info-2">
+                            <h3>Te invitamos</h3>
+                            <p>
+                               visita nuestras promociones.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="info-1">
+                        <img src="images/images/f2.svg" alt="">
+                        <div class="info-2">
+                            <h3>Te invitamos</h3>
+                            <p>
+                                prueba nuestros deliciosos desayunos. 
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-img">
+                <img src="images/images/info.png" alt="">
+            </div>
+
+        </div>
+    </section>
+        <br>
+        <br>
+        <br>
+    <footer class="footer container">
+        
+        <img class="logo-2" src="images/images/palitos.png" alt="">
+
+        <div class="links">
+            <h4>acerca de nosotros</h4>
+            <ul>
+              <li><a href="vym.html">Mision</a></li>
+                <li><a href="vym.html">Vision</a></li>
+                <li><a href="vym.html">Metas</a></li>
+                <li><a href="participantes.html">Participantes</a></li>
+            </ul>
+
+        </div>
+
+
+        </div>
+
+        <div class="links">
+            <h4>Buscanos   en</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/kikspecial_club/">Instagram</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100092437208280">Facebook</a></li>
+              <li><a href="https://twitter.com/KikSpecialClub">Twitter</a></li>
+              <li><a href="http://Wa.me/+524531140645">WhatsApp</a></li>
+            </ul>
+
+        </div>
+        
+        
+        <div class="links">
+            <h4>Redes</h4>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100092437208280">
+                  <div class="social">
+                    <img src="images/images/s1.svg">
+                  </div>
+               </a>
+               <a href="https://twitter.com/KikSpecialClub">
+                <div class="social">
+                  <img src="images/images/s2.svg">
+                </div>
+            </a>
+
+                <a href="https://www.instagram.com/kikspecial_club/">
+                    <div class="social">
+                      <img src="images/images/s3.svg">
+                    </div>
+                </a>
+
+                <a href="http://Wa.me/+524531140645">
+                    <div class="social">
+                     <img src="images/images/pngwing.com%20(1).png" class="imangenww">
+
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                  
+ 
+                     
+
+                     <div id="sfcnwuplg34y6egqw9bthbqjnwr26j4smh1"></div>
+                     <div id="sfcmd8u7nujqn599ppt47gzr2jsb7cmhqce"></div>
+                    <script type="text/javascript" src="https://counter10.optistats.ovh/private/counter.js?c=md8u7nujqn599ppt47gzr2jsb7cmhqce&down=async" async></script>
+                    <br><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas">
+                   <img src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=md8u7nujqn599ppt47gzr2jsb7cmhqce" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+                   <a href="https://www.contadorvisitasgratis.com" title="contador de visitas">
+                   <img src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=md8u7nujqn599ppt47gzr2jsb7cmhqce" border="0" title="contador de visitas" alt="contador de visitas"></a>
+
+
+                
+                </a>
+
+
+            </div>
+            
+        </div>
+        
+   
+    </footer>
+        
+     
+
+    <script src="script.js"></script>
+  
+
+</body>
+</html>
